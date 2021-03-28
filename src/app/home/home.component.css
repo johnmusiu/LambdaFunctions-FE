@@ -1,0 +1,15 @@
+.cardWrap {
+  padding: 15px;
+  width: 50%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-card{
+    margin-top: 11px
+}
+
+h1{
+    padding-left: 30%;
+}
