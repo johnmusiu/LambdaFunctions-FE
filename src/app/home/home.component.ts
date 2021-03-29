@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ApiService } from '../api.service';
-import { repeat, delay } from 'rxjs/operators';
+import { repeat, take } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.apiService
       .sendGetRequest()
-      .pipe(delay(600), repeat(Infinity))
+      .pipe(repeat(Infinity), take(1000))
       .subscribe((data: any) => {
         console.log(data.price);
         this.price = data.price;
