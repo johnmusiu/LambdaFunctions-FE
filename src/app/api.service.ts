@@ -18,7 +18,7 @@ export class ApiService {
       errorMessage = `Error: ${errorResponse.error.message}`;
     } else {
       // server side error
-      errorMessage = `Error Code: ${errorResponse.error.status}\nMessage: ${errorResponse.error.error.message}`;
+      errorMessage = `Error Code: ${errorResponse.error.status}\nMessage: ${errorResponse.error.message}`;
     }
     window.alert(errorMessage);
     return throwError(errorMessage);

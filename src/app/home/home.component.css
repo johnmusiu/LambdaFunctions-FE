@@ -1,13 +1,14 @@
 .cardWrap {
+  display: flex;
   padding: 15px;
-  width: 50%;
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 mat-card{
-    margin-top: 11px
+    margin-top: 11px;
+    width: 50%;
 }
 
 h1{

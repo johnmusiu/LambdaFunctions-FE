@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-// import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
-    // MatProgressSpinner,
+    MatProgressSpinnerModule,
     MatIconModule,
   ],
   providers: [],

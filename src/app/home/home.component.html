@@ -1,7 +1,8 @@
 <div class="cardWrap">
-  <!-- <mat-spinner *ngIf="price.length === 0"></mat-spinner> -->
 
-  <mat-card>
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
+  <mat-card *ngIf="!loading">
     <mat-card-header>
       <mat-card-title>Current BitCoin Price in $ (USD)</mat-card-title>
     </mat-card-header>
